@@ -117,11 +117,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 relative pr-16 md:pr-0">
+        <div className="border-t border-white/5 pt-8 pb-20 md:pb-0 flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 relative w-full">
           <p className="text-sm font-light tracking-wide text-white/40 text-center md:text-left">
             © 2026 The Sapients. Todos los derechos reservados.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-center">
             <a className="text-sm font-light tracking-wide text-white/40 hover:text-white transition-colors" href="#terminos-y-condiciones">Términos y Condiciones</a>
             <a className="text-sm font-light tracking-wide text-white/40 hover:text-white transition-colors" href="#politica-de-privacidad">Política de Privacidad</a>
           </div>
