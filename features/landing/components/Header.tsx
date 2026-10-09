@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 
+import logoImg from '../../../public/logo.avif';
+
 export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
@@ -101,7 +103,7 @@ export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
           {/* Logo Section */}
           <a href="#inicio" onClick={(e) => handleSmoothScroll(e, '#inicio')} className="flex items-center gap-4 flex-shrink-0 group">
             <Image 
-              src="/logo.avif" 
+              src={logoImg} 
               alt="The Sapients Logo" 
               width={240} 
               height={48}  

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
+import logoImage from '../../../public/src/fondo2.jpg';
 // Module-level flag: resets to false on every full page reload (JS module re-evaluated),
 // but stays true during client-side navigation (language switches) since the module
 // remains loaded in memory. This is the correct pattern for "show once per page load".
@@ -57,7 +58,7 @@ export default function ScrollRevealLoader({ children }: { children: React.React
               style={{ willChange: 'transform, opacity' }}
             >
               <Image 
-                src="/src/fondo2.jpg" 
+                src={logoImage} 
                 alt="The Sapients Logo High Res" 
                 fill 
                 className="object-contain" 

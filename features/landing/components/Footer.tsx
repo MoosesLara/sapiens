@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import logoImg from '../../../public/logo.avif';
 
 export default function Footer() {
   return (
@@ -46,7 +47,7 @@ export default function Footer() {
             {/* Huge Logo, no text */}
             <div className="flex items-start">
               <Image 
-                src="/logo.avif" 
+                src={logoImg} 
                 alt="The Sapients Logo" 
                 width={500} 
                 height={300}  
