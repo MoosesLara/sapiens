@@ -33,7 +33,7 @@ export default function Hero({ dict }: { dict: any }) {
       y: 0, 
       opacity: 1, 
       filter: 'blur(0px)',
-      transition: { type: "spring", damping: 25, stiffness: 120, mass: 0.8 } 
+      transition: { type: "spring" as any, damping: 25, stiffness: 120, mass: 0.8 } 
     }
   };
 
@@ -43,7 +43,7 @@ export default function Hero({ dict }: { dict: any }) {
       y: 0, 
       opacity: 1, 
       scale: 1,
-      transition: { type: "spring", damping: 30, stiffness: 80, delay: 0.8 } 
+      transition: { type: "spring" as any, damping: 30, stiffness: 80, delay: 0.8 } 
     }
   };
 

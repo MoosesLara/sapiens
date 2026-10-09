@@ -107,7 +107,7 @@ export default function Testimonials() {
                     zIndex,
                   }}
                   transition={{
-                    type: "spring",
+                    type: "spring" as any,
                     stiffness: 150,
                     damping: 25,
                     mass: 0.8

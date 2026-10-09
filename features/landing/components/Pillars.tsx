@@ -18,7 +18,7 @@ const itemVariants = {
     y: 0, 
     opacity: 1, 
     scale: 1,
-    transition: { type: "spring", damping: 25, stiffness: 120 } 
+    transition: { type: "spring" as any, damping: 25, stiffness: 120 } 
   }
 };
 
@@ -54,7 +54,7 @@ export default function Pillars() {
             {/*  Pillar I: Riquezas  */}
             <motion.article 
               variants={itemVariants}
-              whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
+              whileHover={{ y: -10, transition: { type: "spring" as any, stiffness: 300 } }}
               className="rounded-none border border-white/5 bg-carbon-surface p-10 md:p-14 flex flex-col justify-between group hover:border-primary/30 transition-colors"
             >
               <div>
@@ -86,7 +86,7 @@ export default function Pillars() {
             {/*  Pillar II: Honra  */}
             <motion.article 
               variants={itemVariants}
-              whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
+              whileHover={{ y: -10, transition: { type: "spring" as any, stiffness: 300 } }}
               className="rounded-none border border-white/5 bg-carbon-surface p-10 md:p-14 flex flex-col justify-between group hover:border-secondary-fixed/30 transition-colors"
             >
               <div>
@@ -118,7 +118,7 @@ export default function Pillars() {
             {/*  Pillar III: Vida  */}
             <motion.article 
               variants={itemVariants}
-              whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
+              whileHover={{ y: -10, transition: { type: "spring" as any, stiffness: 300 } }}
               className="rounded-none border border-white/5 bg-carbon-surface p-10 md:p-14 flex flex-col justify-between group hover:border-gold-light/30 transition-colors"
             >
               <div>

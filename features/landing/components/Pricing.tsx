@@ -1,8 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -13,12 +13,12 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { y: 40, opacity: 0 },
   visible: { 
     y: 0, 
     opacity: 1, 
-    transition: { type: "spring", damping: 25, stiffness: 100 } 
+    transition: { type: "spring" as any, damping: 25, stiffness: 100 } 
   }
 };
 
