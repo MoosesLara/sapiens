@@ -15,7 +15,7 @@ export default function UrgencyRibbon({ dict }: { dict: any }) {
           <motion.div
             className="flex whitespace-nowrap items-center"
             animate={{ x: ["0%", "-25%"] }}
-            transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+            transition={{ ease: "linear", duration: 50, repeat: Infinity }}
           >
             {/* Render 8 blocks, animate to -25% (shifting exactly 2 blocks) for a flawless ultra-wide loop */}
             {[...Array(8)].map((_, i) => (

@@ -162,7 +162,7 @@
     overscroll-behavior: none;
     background-color: var(--color-carbon-void);
     color: var(--color-text-primary);
-    overflow-x: hidden;
+    overflow-x: clip;
   }
   
   main > :first-child {

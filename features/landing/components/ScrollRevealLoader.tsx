@@ -30,11 +30,11 @@ export default function ScrollRevealLoader({ children }: { children: React.React
       document.body.style.overflow = 'hidden';
     } else {
       setTimeout(() => {
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = '';
       }, 1000);
     }
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
     };
   }, [isShowingLoader]);
 

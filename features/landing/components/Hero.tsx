@@ -131,11 +131,11 @@ export default function Hero({ dict }: { dict: any }) {
           <motion.a 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-on-primary font-label-md md:font-label-lg text-label-md md:text-label-lg uppercase tracking-wider font-bold shadow-xl transition-colors cursor-none" 
+            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 md:gap-3 px-4 py-3 md:px-8 md:py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-on-primary font-label-md md:font-label-lg text-label-md md:text-label-lg uppercase tracking-wider font-bold shadow-xl transition-colors cursor-none text-center" 
             href="#inscripcion"
           >
             <span>{dict.cta}</span>
-            <div className="relative w-4 h-4 md:w-6 md:h-6 overflow-hidden flex items-center justify-center">
+            <div className="relative w-4 h-4 md:w-6 md:h-6 overflow-hidden flex items-center justify-center shrink-0">
               <svg className="w-4 h-4 md:w-6 md:h-6 absolute transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -160,16 +160,16 @@ export default function Hero({ dict }: { dict: any }) {
         variants={imageVariants}
         className="relative z-10 w-[90%] max-w-[1600px] mt-20 mb-10 rounded-none overflow-hidden shadow-2xl bg-surface-container-lowest border border-white/5"
       >
-        <div className="aspect-video lg:aspect-[21/9] w-full bg-cover bg-center" style={{ backgroundImage: "url('/src/templocasa.jpg')" }}>
-          <div className="w-full h-full bg-gradient-to-t from-carbon-void via-carbon-void/40 to-transparent flex flex-col sm:flex-row items-start sm:items-end justify-between p-6 sm:p-12 gap-6">
+        <div className="min-h-[380px] sm:min-h-[450px] lg:min-h-0 lg:aspect-[21/9] w-full bg-cover bg-center relative" style={{ backgroundImage: "url('/src/templocasa.jpg')" }}>
+          <div className="absolute inset-0 bg-gradient-to-t from-carbon-void via-carbon-void/60 to-transparent flex flex-col sm:flex-row items-start sm:items-end justify-end sm:justify-between p-6 sm:p-12 gap-6">
             <div className="text-left flex flex-col">
-              <span className="font-label-sm text-label-sm uppercase text-primary font-bold mb-3">
+              <span className="font-label-sm text-xs sm:text-label-sm uppercase text-primary font-bold mb-2 sm:mb-3">
                 {dict.imageBadge}
               </span>
-              <h3 className="font-headline-xl text-headline-xl text-white uppercase drop-shadow-lg">
+              <h3 className="text-3xl sm:text-4xl md:text-headline-xl text-white uppercase drop-shadow-lg font-black leading-tight sm:leading-none">
                 {dict.imageTitle}
               </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant uppercase mt-4 tracking-[0.15em]">
+              <p className="text-xs sm:text-sm md:text-body-md text-on-surface-variant uppercase mt-3 sm:mt-4 tracking-[0.15em]">
                 {dict.imageLocation}
               </p>
             </div>
