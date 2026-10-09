@@ -162,6 +162,7 @@
     overscroll-behavior: none;
     background-color: var(--color-carbon-void);
     color: var(--color-text-primary);
+    overflow-x: hidden;
   }
   
   main > :first-child {

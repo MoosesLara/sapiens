@@ -107,7 +107,7 @@ export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
               alt="The Sapients Logo" 
               width={240} 
               height={48}  
-              className={`w-auto object-contain transition-all duration-500 group-hover:scale-105 ${isScrolled ? 'h-10 md:h-12' : 'h-16 md:h-20'}`} 
+              className={`w-auto object-contain transition-all duration-500 group-hover:scale-105 ${isScrolled ? 'h-6 sm:h-8 md:h-10 lg:h-12' : 'h-8 sm:h-10 md:h-14 lg:h-20'}`} 
             />
           </a>
 
@@ -166,7 +166,8 @@ export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
             {/* CTA Button */}
             <Link 
               href="#inscribirse-ahora"
-              className="group inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-lg text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 hover:shadow-[0_4px_24px_rgba(237,192,111,0.4)] active:scale-[0.98] transition-all font-bold cursor-none"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="hidden md:inline-flex group items-center justify-center gap-2 px-6 py-2.5 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-lg text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 hover:shadow-[0_4px_24px_rgba(237,192,111,0.4)] active:scale-[0.98] transition-all font-bold cursor-none"
             >
               <span>{safeDict.cta}</span>
               <div className="relative w-5 h-5 overflow-hidden flex items-center justify-center">
@@ -234,6 +235,18 @@ export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
                 )}
               </button>
             ))}
+            
+            {/* Mobile CTA Button */}
+            <Link 
+              href="#inscribirse-ahora"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="mt-6 group w-full flex items-center justify-center gap-2 px-6 py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-lg text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 active:scale-[0.98] transition-all font-bold"
+            >
+              <span>{safeDict.cta}</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </Link>
           </div>
         </div>
       </div>
