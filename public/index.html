@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sapients® | Cash Luna</title>
+  <!-- Optional meta refresh fallback -->
+  <meta http-equiv="refresh" content="0; url=/sapiens/es">
+  <script type="text/javascript">
+    // GitHub Pages repository name is typically in the pathname
+    // e.g. /sapiens/
+    var repoPath = window.location.pathname.startsWith('/sapiens') ? '/sapiens' : '';
+    
+    // Detect preferred language
+    var preferredLang = 'es';
+    if (typeof navigator !== 'undefined') {
+      var langs = navigator.languages || [navigator.language];
+      for (var i = 0; i < langs.length; i++) {
+        var lang = langs[i].toLowerCase();
+        if (lang.indexOf('en') === 0) {
+          preferredLang = 'en';
+          break;
+        } else if (lang.indexOf('pt') === 0) {
+          preferredLang = 'pt';
+          break;
+        } else if (lang.indexOf('es') === 0) {
+          preferredLang = 'es';
+          break;
+        }
+      }
+    }
+    
+    // Perform redirect
+    window.location.replace(repoPath + '/' + preferredLang);
+  </script>
+</head>
+<body style="background-color: #0b0c10;">
+</body>
+</html>
