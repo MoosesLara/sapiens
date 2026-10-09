@@ -97,7 +97,7 @@ export default function Testimonials() {
               return (
                 <motion.div
                   key={idx}
-                  className="col-start-1 row-start-1 w-[90vw] max-w-[340px] sm:max-w-[480px] md:max-w-[550px] cursor-pointer"
+                  className="col-start-1 row-start-1 w-full max-w-[320px] sm:max-w-[480px] md:max-w-[550px] cursor-pointer"
                   onClick={() => setActiveIndex(idx)}
                   initial={false}
                   animate={{
@@ -114,7 +114,7 @@ export default function Testimonials() {
                   }}
                 >
                   {/* Card Content */}
-                  <div className={`w-full bg-[#0c0c0c]/90 backdrop-blur-3xl border p-10 md:p-14 rounded-3xl flex flex-col justify-between items-center text-center transition-all duration-500
+                  <div className={`w-full bg-[#0c0c0c]/90 backdrop-blur-3xl border p-6 sm:p-10 md:p-14 rounded-3xl flex flex-col justify-between items-center text-center transition-all duration-500
                     ${isCenter ? 'border-primary/40 shadow-[0_0_80px_rgba(212,175,55,0.15)]' : 'border-white/5 shadow-none hover:border-white/15'}`}>
                     
                     <p className={`font-body-lg text-body-lg leading-relaxed mb-10 transition-colors duration-500
