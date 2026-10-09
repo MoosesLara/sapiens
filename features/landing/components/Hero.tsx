@@ -131,15 +131,15 @@ export default function Hero({ dict }: { dict: any }) {
           <motion.a 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-xl transition-colors cursor-none" 
+            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-on-primary font-label-md md:font-label-lg text-label-md md:text-label-lg uppercase tracking-wider font-bold shadow-xl transition-colors cursor-none" 
             href="#inscripcion"
           >
             <span>{dict.cta}</span>
-            <div className="relative w-6 h-6 overflow-hidden flex items-center justify-center">
-              <svg className="w-6 h-6 absolute transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+            <div className="relative w-4 h-4 md:w-6 md:h-6 overflow-hidden flex items-center justify-center">
+              <svg className="w-4 h-4 md:w-6 md:h-6 absolute transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
-              <svg className="w-6 h-6 absolute -translate-x-[150%] transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+              <svg className="w-4 h-4 md:w-6 md:h-6 absolute -translate-x-[150%] transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </div>
