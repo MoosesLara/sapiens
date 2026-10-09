@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>The Sapients® | Cash Luna</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"carbon-surface":"#141416","gold-deep":"#8F6B27","inverse-on-surface":"#313031","on-primary":"#422d00","secondary-fixed":"#ffe088","outline-variant":"#4e4638","surface-container-low":"#1c1b1c","on-secondary":"#3c2f00","on-primary-container":"#4c3400","tertiary-fixed":"#ffdeac","secondary-container":"#af8d11","primary-container":"#c59b4e","surface-container-highest":"#353436","on-primary-fixed-variant":"#5e4200","gold-border":"#C59B4E33","tertiary":"#f1be69","surface-bright":"#39393a","on-tertiary":"#432c00","on-secondary-fixed":"#241a00","primary-fixed":"#ffdea8","on-tertiary-fixed-variant":"#5f4100","on-surface-variant":"#d2c5b3","whatsapp-green":"#25D366","surface-container-high":"#2a2a2b","text-muted":"#A1A1AA","on-error-container":"#ffdad6","outline":"#9b8f7f","primary-fixed-dim":"#edc06f","secondary":"#e9c349","surface-container-lowest":"#0e0e0f","on-tertiary-container":"#4d3400","on-error":"#690005","surface-container":"#201f20","on-surface":"#e5e2e3","error":"#ffb4ab","gold-light":"#F2D07E","carbon-elevated":"#1B1B1F","on-secondary-fixed-variant":"#574500","surface":"#131314","inverse-surface":"#e5e2e3","inverse-primary":"#7a580f","tertiary-fixed-dim":"#f1be69","secondary-fixed-dim":"#e9c349","primary":"#edc06f","carbon-void":"#070707","surface-variant":"#353436","text-primary":"#F7F7F8","surface-tint":"#edc06f","surface-dim":"#131314","on-tertiary-fixed":"#281900","on-secondary-container":"#342800","tertiary-container":"#c99a48","on-primary-fixed":"#271900","background":"#131314","error-container":"#93000a","on-background":"#e5e2e3"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"2rem","margin-mobile":"1.25rem","space-xl":"2.5rem",gutter:"1rem","space-sm":"0.5rem","space-md":"1rem","gutter-mobile":"0.75rem","space-xs":"0.25rem","space-lg":"1.5rem"},fontFamily:{"headline-xl":["Bodoni Moda"],"body-sm":["Inter"],"headline-lg":["Bodoni Moda"],"body-lg":["Inter"],"headline-md":["Bodoni Moda"],"body-md":["Inter"],"headline-xl-mobile":["Bodoni Moda"],"label-sm":["Montserrat"],"label-md":["Montserrat"],"title-lg":["Montserrat"],"title-md":["Montserrat"],"headline-lg-mobile":["Bodoni Moda"],"label-lg":["Montserrat"]},fontSize:{"headline-xl":["48px",{lineHeight:"54px",letterSpacing:"0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"42px",letterSpacing:"0.01em",fontWeight:"600"}],"body-lg":["17px",{lineHeight:"26px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"30px",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"22px",fontWeight:"400"}],"headline-xl-mobile":["32px",{lineHeight:"38px",letterSpacing:"0.02em",fontWeight:"700"}],"label-sm":["10px",{lineHeight:"12px",letterSpacing:"0.16em",fontWeight:"700"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.14em",fontWeight:"600"}],"title-lg":["18px",{lineHeight:"24px",letterSpacing:"0.08em",fontWeight:"700"}],"title-md":["15px",{lineHeight:"20px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"0.01em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"700"}]}}}};</script></head><body class="bg-carbon-void font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-carbon-void/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)] border-b border-primary/10"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-4 flex-shrink-0"><img alt="Image from https://cdn.prod.website-files.com/6838ba5d22bcfa773198b2fe/68f0896ae8681ca92ef8ebbd_logos%20sapients_Mesa%20de%20trabajo%201.avif" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZVFYi3nrWlq7SlwvdCnHASmXnV2KTJleX9JIzEaPvdPEKFeNFOumKo3kBf0AiVx683VDqeRDhuPMiEl-qUjWkKhA7VZmPhPSeZpbWdIiIyhRWckRHvC2QY_D6dZWWbHOzcy3M61hgXnbsSrCnAKlExYzBcWeSJu3QAUOxTsTdzOXHi5uEltDIQZhX1CUjihK8B7-hCltuAzbQFNnAeIa5amaxM-cq8-DmRx6udw0X"/><div class="flex flex-col"><span class="font-title-md text-title-md tracking-wider text-text-primary uppercase">The Sapients<span class="text-primary text-[10px] align-super">®</span></span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">By Cash Luna</span></div></div><nav class="hidden xl:flex items-center gap-7" data-active-classes="text-primary border-b border-primary"><a aria-current="page" class="font-label-md uppercase transition-colors py-1 text-primary border-b border-primary" data-path="inicio" href="#">Inicio</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="los-3-pilares" href="#">Los 3 Pilares</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="el-mentor" href="#">El Mentor</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="testimonios" href="#">Testimonios</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="libro-oficial" href="#">Libro Oficial</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="preguntas-frecuentes" href="#">Preguntas Frecuentes</a></nav><div class="flex items-center gap-4 flex-shrink-0"><div class="hidden sm:flex items-center bg-carbon-surface px-2.5 py-1 rounded border border-primary/20"><span class="font-label-sm text-label-sm text-primary font-bold cursor-pointer">ES</span><span class="font-label-sm text-label-sm text-outline mx-1.5">/</span><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface cursor-pointer">EN</span><span class="font-label-sm text-label-sm text-outline mx-1.5">/</span><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface cursor-pointer">PT</span></div><a class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded bg-carbon-surface text-on-surface-variant hover:text-on-surface border border-primary/20 hover:border-primary/40 transition-all" data-path="concierge-whatsapp" href="#"><span class="material-symbols-outlined text-whatsapp-green text-[18px]">chat</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Concierge</span></a><a class="inline-flex items-center justify-center px-5 py-2.5 rounded bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-lg text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 active:scale-[0.98] transition-all font-bold" data-path="inscribirse-ahora" href="#">Inscribirse Ahora</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 shadow-[0_0_12px_rgba(237,192,111,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-carbon-void relative min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- TOP URGENCY / SOLD OUT NOTICE RIBBON -->
+<aside aria-label="Aviso de disponibilidad" class="w-full bg-surface-container-lowest text-center py-2.5 px-4 shadow-sm">
+<div class="max-w-7xl mx-auto flex items-center justify-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-error-container text-error text-[10px] font-label-sm uppercase tracking-widest font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+        Edición Agosto Agotada
+      </span>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hidden sm:inline">
+        Próxima fecha confirmada: <span class="text-primary font-bold">18, 19 y 20 de Noviembre de 2026</span> • Las Cumbres Convention Center, Guatemala • 100% Presencial
+      </p>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest sm:hidden">
+        Noviembre 2026 • Cupo Estrictamente Limitado
+      </span>
+</div>
+</aside>
+<!-- SECTION 1: HERO (WIDESCREEN PRESTIGE & VISUAL GRAVITAS) -->
+<section class="relative w-full overflow-hidden bg-carbon-void flex flex-col items-center justify-center text-center px-6 lg:px-12 py-20 lg:py-28 shadow-xl">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[480px] bg-gradient-to-b from-primary/10 via-primary-container/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-carbon-elevated/40 via-carbon-void/90 to-carbon-void pointer-events-none"></div>
+<div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
+<!-- Exclusivity Pill Badge -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-carbon-surface shadow-md">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">
+          18 Master Classes Intensivas • 3 Días de Inmersión
+        </span>
+</div>
+<!-- Overline Lead -->
+<p class="font-label-lg text-label-lg uppercase tracking-[0.24em] text-on-surface-variant mt-8 mb-3">
+        Cash Luna presenta
+      </p>
+<!-- Main Crest Title -->
+<h1 class="font-headline-xl text-headline-xl text-primary font-headline-xl tracking-tight uppercase">
+        The Sapients<span class="text-primary align-super text-title-md font-sans">®</span>
+</h1>
+<span class="font-label-lg text-label-lg uppercase tracking-[0.3em] text-secondary-fixed font-semibold mt-2">
+        Escuela de Fe y Sabiduría
+      </span>
+<!-- Core Value Proposition -->
+<p class="font-headline-md text-headline-md text-on-surface font-headline-md max-w-3xl mt-6 leading-relaxed">
+        Aprenderás a administrar la fe y la sabiduría para construir <span class="text-gold-light italic">riquezas con honra</span> sin perder la vida.
+      </p>
+<!-- Event Logistics Pill Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full max-w-3xl mt-10">
+<div class="flex items-center justify-center gap-3 px-4 py-3 rounded bg-carbon-surface shadow-sm text-left">
+<span class="material-symbols-outlined text-primary text-[22px]">calendar_today</span>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-text-muted">Fecha Oficial</div>
+<div class="font-label-md text-label-md uppercase text-on-surface font-bold">18, 19 y 20 Noviembre 2026</div>
+</div>
+</div>
+<div class="flex items-center justify-center gap-3 px-4 py-3 rounded bg-carbon-surface shadow-sm text-left">
+<span class="material-symbols-outlined text-primary text-[22px]">location_on</span>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-text-muted">Sede Soberana</div>
+<div class="font-label-md text-label-md uppercase text-on-surface font-bold">Las Cumbres Center, Guatemala</div>
+</div>
+</div>
+<div class="flex items-center justify-center gap-3 px-4 py-3 rounded bg-carbon-surface shadow-sm text-left">
+<span class="material-symbols-outlined text-primary text-[22px]">group</span>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-text-muted">Modalidad</div>
+<div class="font-label-md text-label-md uppercase text-on-surface font-bold">100% Presencial • Cupo Restringido</div>
+</div>
+</div>
+</div>
+<!-- Hero Call To Action Group -->
+<div class="flex flex-col sm:flex-row items-center gap-4 mt-10 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-xl hover:brightness-110 active:scale-[0.98] transition-all" href="#inscripcion">
+<span>Inscribirse Ahora</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded bg-carbon-elevated text-primary font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-high transition-colors shadow-sm" href="https://wa.me/50230719826" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-whatsapp-green text-[20px]">chat</span>
+<span>Concierge WhatsApp VIP</span>
+</a>
+</div>
+<!-- Scarcity Microlabel -->
+<p class="font-body-sm text-body-sm text-text-muted mt-4">
+        Acceso estrictamente reservado por orden de registro. Cupos limitados.
+      </p>
+</div>
+<!-- Hero Atmospheric Stage Image Frame -->
+<div class="relative w-full max-w-6xl mt-16 rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest">
+<div class="aspect-[21/9] w-full bg-cover bg-center" data-alt="Expansive panoramic auditorium during a sovereign leadership summit in Las Cumbres Convention Center. Dramatic gold volumetric stage lighting floods thousands of focused executives, sovereign leaders, and ministers taking notes, creating an atmosphere of deep reverence, spiritual honor, and architectural grandeur." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAifpdn1wYwwNP2w6lbPCiswxeW2nS7JxxYk2xXpGjUTZItlguFp_FqX3OdwQoH3sFIr__0TL9RVGKdJHxXpAuWYfxWYNsUcJ6hKB8h7LYAMAGBoqOC5c6BlC5GLxixQ_8ld3PKVFGxTR-VN6TgIdxi6xeJfojy6nuuzVJ3ASyR3yQ0oI2hYz61WhsWhp4HJKQ1pJuw_DKkIAFTE11rjbKEyBpovn1FO2zaLFrATnI')">
+<div class="w-full h-full bg-gradient-to-t from-carbon-void via-carbon-void/30 to-transparent flex items-end justify-between p-6 sm:p-10">
+<div class="text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Inmersión Anual Presencial</span>
+<h3 class="font-headline-md text-headline-md text-text-primary mt-1">Las Cumbres Convention Center</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Km 17 a San José Pinula, Guatemala</p>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded bg-carbon-void/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase text-text-primary">Enseñanza Magistral Directa</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: GOLD MANIFESTO TICKER STRIP -->
+<section aria-label="Valores del movimiento" class="w-full overflow-hidden bg-carbon-elevated py-4 shadow-sm">
+<div class="flex whitespace-nowrap animate-none overflow-x-auto justify-between px-6 max-w-7xl mx-auto gap-8 text-center scrollbar-none">
+<span class="font-label-md text-label-md uppercase tracking-[0.28em] text-primary font-bold flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> HONRA
+      </span>
+<span class="font-label-md text-label-md uppercase tracking-[0.28em] text-on-surface-variant font-bold flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> VIDA
+      </span>
+<span class="font-label-md text-label-md uppercase tracking-[0.28em] text-primary font-bold flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> RIQUEZAS
+      </span>
+<span class="font-label-md text-label-md uppercase tracking-[0.28em] text-secondary-fixed font-bold flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> SABIDURÍA DIVINA
+      </span>
+<span class="font-label-md text-label-md uppercase tracking-[0.28em] text-primary font-bold flex items-center gap-3 hidden md:flex">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> HONRA
+      </span>
+<span class="font-label-md text-label-md uppercase tracking-[0.28em] text-on-surface-variant font-bold flex items-center gap-3 hidden md:flex">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> VIDA
+      </span>
+<span class="font-label-md text-label-md uppercase tracking-[0.28em] text-primary font-bold flex items-center gap-3 hidden md:flex">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> RIQUEZAS
+      </span>
+</div>
+</section>
+<!-- SECTION 3: MANIFESTO & MINDSET QUOTE -->
+<section class="w-full bg-carbon-surface py-24 px-6 lg:px-12 relative overflow-hidden">
+<div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+<!-- Watermark emblem SVG -->
+<svg class="w-16 h-16 text-primary/20 mb-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
+</svg>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-primary font-bold">
+        El Principio Innegable
+      </span>
+<blockquote class="font-headline-lg text-headline-lg text-on-surface font-headline-lg mt-6 max-w-4xl leading-tight">
+        «Has conquistado mucho por fe: <span class="text-gold-light italic">no lo pierdas por falta de sabiduría</span>.»
+      </blockquote>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-6">
+        The Sapients® te ayudará a adquirir sabiduría para administrar aquello que conquistaste mediante la fe.
+      </p>
+<!-- Signature Aesthetic -->
+<div class="mt-8 flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary italic font-headline-md">Cash Luna</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted mt-1">Pastor, Autor &amp; Mentor Multigeneracional</span>
+</div>
+<!-- Thesis Banner Bento -->
+<div class="w-full mt-16 rounded-xl bg-carbon-elevated p-8 lg:p-10 shadow-lg text-left relative overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-64 h-64 bg-primary/5 rounded-full blur-2xl"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Transformación Estructural</span>
+<h2 class="font-headline-md text-headline-md text-text-primary mt-2">Una Mentalidad Inusual</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              El salto cuántico entre el esfuerzo exhaustivo y la mayordomía soberana.
+            </p>
+</div>
+<div class="lg:col-span-8 bg-surface-container-low p-6 rounded-lg">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed font-medium">
+              «Piensa, actúa y vive de manera diferente. Si deseas resultados inusuales, tendrás que convertirte en una persona inusual. <strong class="text-primary font-bold">The Sapients® afectará tu estructura mental para que lo logres.</strong>»
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: THE 3 PILLARS (LOS 3 PILARES ESENCIALES) -->
+<section class="w-full bg-carbon-void py-24 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.24em] text-primary font-bold">
+          Fundamento Bíblico y Financiero
+        </span>
+<h2 class="font-headline-xl text-headline-xl text-text-primary font-headline-xl mt-3">
+          Los 3 Pilares Esenciales
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">
+          Dios te da el poder de generar riquezas de manera honorable, sin perder la vida.
+        </p>
+</div>
+<!-- 3-Column Luxury Desktop Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Pillar I: Riquezas -->
+<article class="rounded-xl bg-carbon-surface p-8 lg:p-10 shadow-lg flex flex-col justify-between relative group hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="font-headline-xl text-headline-xl text-primary font-headline-xl opacity-80">01</span>
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[28px]">payments</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Pilar I</span>
+<h3 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg mt-1 mb-5">
+              Riquezas
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              Este pilar te enseñará que Dios les dio a las personas el poder de crear las riquezas y que estas no son malas cuando se conoce el propósito por el cual Él las pone en nuestras manos.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Las riquezas se sienten cómodas en las manos de quienes saben para qué las da Dios; de lo contrario, les salen alas y vuelan. Aprenderás a valorar todo aquello que el dinero jamás podrá comprar.
+            </p>
+</div>
+<div class="mt-8 pt-6 bg-surface-container-lowest/50 -mx-8 -mb-8 p-8 rounded-b-xl">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Principio de Enfoque</span>
+<p class="font-label-md text-label-md uppercase text-primary font-bold mt-1">Mayordomía con Propósito Divino</p>
+</div>
+</article>
+<!-- Pillar II: Honra -->
+<article class="rounded-xl bg-carbon-surface p-8 lg:p-10 shadow-lg flex flex-col justify-between relative group hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="font-headline-xl text-headline-xl text-secondary-fixed font-headline-xl opacity-80">02</span>
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[28px]">military_tech</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-bold">Pilar II</span>
+<h3 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg mt-1 mb-5">
+              Honra
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              La prosperidad que proviene de Dios consiste en mantener un perfecto equilibrio entre generar riquezas, vivir honorablemente y llevar una vida plena.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Este pilar te enseñará que tu reputación y un buen nombre excede a todo lo material. Sin honra, cualquier acumulación material es efímera y autodestructiva.
+            </p>
+</div>
+<div class="mt-8 pt-6 bg-surface-container-lowest/50 -mx-8 -mb-8 p-8 rounded-b-xl">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Principio de Enfoque</span>
+<p class="font-label-md text-label-md uppercase text-secondary-fixed font-bold mt-1">Reputación y Buen Nombre</p>
+</div>
+</article>
+<!-- Pillar III: Vida -->
+<article class="rounded-xl bg-carbon-surface p-8 lg:p-10 shadow-lg flex flex-col justify-between relative group hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="font-headline-xl text-headline-xl text-gold-light font-headline-xl opacity-80">03</span>
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-gold-light shadow-sm">
+<span class="material-symbols-outlined text-[28px]">spa</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-gold-light font-bold">Pilar III</span>
+<h3 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg mt-1 mb-5">
+              Vida
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              Descubrirás el verdadero sentido de la plenitud. Tu conciencia será liberada para gozar de una vida abundante en la tierra y eterna en los cielos.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Disfrutar de la familia, la salud, los negocios y sus ganancias es un regalo de Dios que con The Sapients® aprenderás a destapar sin remordimiento ni culpa.
+            </p>
+</div>
+<div class="mt-8 pt-6 bg-surface-container-lowest/50 -mx-8 -mb-8 p-8 rounded-b-xl">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Principio de Enfoque</span>
+<p class="font-label-md text-label-md uppercase text-gold-light font-bold mt-1">Plenitud Familiar y Paz Mental</p>
+</div>
+</article>
+</div>
+<!-- Scriptural Anchor Callout -->
+<div class="mt-16 rounded-xl bg-gradient-to-r from-carbon-surface via-carbon-elevated to-carbon-surface p-8 text-center max-w-4xl mx-auto shadow-md">
+<p class="font-headline-md text-headline-md text-gold-light font-headline-md leading-relaxed">
+          «Riquezas, honra y vida son la remuneración de la humildad y del temor de Jehová.»
+        </p>
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-text-muted font-bold block mt-3">
+          — Proverbios 22:4 RV1960
+        </span>
+</div>
+</div>
+</section>
+<!-- SECTION 5: EL MENTOR & PRODUCTO (TWO-COLUMN SPLIT SHOWCASE) -->
+<section class="w-full bg-carbon-surface py-24 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Mentor Bio Column (Left) -->
+<div class="lg:col-span-7 flex flex-col items-start text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.24em] text-primary font-bold">
+          El Mentor de Líderes
+        </span>
+<h2 class="font-headline-xl text-headline-xl text-text-primary font-headline-xl mt-2 mb-4">
+          Cash Luna
+        </h2>
+<p class="font-title-lg text-title-lg text-primary font-bold uppercase tracking-wider mb-6">
+          «Después de Dios, lo más importante son las personas.»
+        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-4">
+          Reconocido internacionalmente como líder de influencia y mentor multigeneracional. Fundador y pastor general de Casa de Dios en Guatemala, una de las congregaciones más influyentes del mundo hispanohablante con más de 25,000 miembros activos.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-8">
+          Autor de best-sellers internacionales que han transformado millones de vidas, entre ellos <em class="text-on-surface">En honor al Espíritu Santo</em>, <em class="text-on-surface">22 días contigo, Espíritu Santo</em> y <em class="text-on-surface">No es por vista</em>.
+        </p>
+<!-- Social Reach Counter Bento -->
+<div class="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 bg-carbon-void p-5 rounded-lg shadow-sm">
+<div class="text-center p-2">
+<div class="font-headline-md text-headline-md text-primary font-bold">+6.8M</div>
+<div class="font-label-sm text-label-sm uppercase text-text-muted">Facebook</div>
+</div>
+<div class="text-center p-2">
+<div class="font-headline-md text-headline-md text-primary font-bold">+3.2M</div>
+<div class="font-label-sm text-label-sm uppercase text-text-muted">Instagram</div>
+</div>
+<div class="text-center p-2">
+<div class="font-headline-md text-headline-md text-primary font-bold">+2.0M</div>
+<div class="font-label-sm text-label-sm uppercase text-text-muted">YouTube</div>
+</div>
+<div class="text-center p-2">
+<div class="font-headline-md text-headline-md text-primary font-bold">+1.2M</div>
+<div class="font-label-sm text-label-sm uppercase text-text-muted">TikTok</div>
+</div>
+</div>
+<div class="mt-8 flex items-center gap-4">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-md hover:bg-gold-light transition-all" href="#inscripcion">
+<span>Asegurar Asiento con el Mentor</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Official Book & Kit Column (Right) -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="rounded-xl bg-carbon-elevated p-8 lg:p-10 shadow-xl flex flex-col relative overflow-hidden">
+<div class="w-16 h-1 rounded-full bg-primary mb-6"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Material de Estudio Exclusivo</span>
+<h3 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg mt-1 mb-2">
+            Libro Oficial The Sapients®
+          </h3>
+<p class="font-label-md text-label-md uppercase text-secondary-fixed font-semibold mb-6">
+            Incluido sin costo con tu registro presencial
+          </p>
+<!-- Book Graphic Mockup Area -->
+<div class="w-full aspect-[4/3] rounded-lg bg-surface-container-lowest overflow-hidden relative shadow-md mb-6">
+<img class="w-full h-full object-cover" data-alt="Exquisite hardcover official book 'The Sapients' by Cash Luna resting elegantly on an obsidian marble desk with subtle brushed gold foil typography and embossed seal, bathed in soft golden rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt0kgPIWwbnjVq5iq6pLoX0ObKz6gm4KfqCo8A6HEfJCgRZB4o7O6IcLuN9_kCBlP1n_tLex6kX3uEXOO54bNs_9-0AYLfhFi39HSSLPOYcI2RUq1ujqek6hJozR6i8KFiZYlDub2hVZ-zITjTgTytleJWRyRGEaENZbMIXwkpvdbGntXjJoM4Qb4sMypLX3oA40z6bg6oEW43AJUGkBMUGROSJfDqsGIREnNYf9U"/>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            Más de 200 páginas de sabiduría práctica estructurada en los tres pilares del método: Riquezas, Honra y Vida. No es teoría académica; es un compendio de errores, aciertos y principios divinos probados a lo largo de 40 años de ministerio y liderazgo.
+          </p>
+<!-- Kit Deliverables List -->
+<div class="space-y-3 bg-carbon-surface p-4 rounded-lg">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_stories</span>
+<span class="font-body-sm text-body-sm text-on-surface">Libro Físico de Edición Limitada en Tapa Dura</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<span class="font-body-sm text-body-sm text-on-surface">Guía Devocional Intensiva: 21 Días de Sabiduría</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<span class="font-body-sm text-body-sm text-on-surface">Cuaderno de Trabajo &amp; Notas Estratégicas Sapients</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: SOCIAL PROOF & TESTIMONIALS (AUTHORITY MOSAIC) -->
+<section class="w-full bg-carbon-void py-24 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.24em] text-primary font-bold">
+            Testimonios de Impacto Global
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-text-primary font-headline-xl mt-2">
+            La Voz de los Soberanos
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0">
+          Líderes de alto calibre, empresarios globales y pastores que ya han experimentado la transformación de The Sapients®.
+        </p>
+</div>
+<!-- 6-Card Desktop Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: Thiago Brunet -->
+<article class="rounded-xl bg-carbon-surface p-8 shadow-md flex flex-col justify-between hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up professional portrait of Thiago Brunet with glasses and black tailored blazer against dark studio background, smiling warmly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0_-1iB8S_tJgorjXljCNIW0ev6Wkdb-Aucg-LUXCRwddCG-Sdd6rQJWWBzSpNk1GwxL0OxEhvmwrH7kK2cWoXdHJnYmAeF6xvX9XtkYrAJ9eqebuc2hiav1NPZOAx60iZsiruOCzppWsEW-jPeV-l0qidB-ajFJk1ehneUMIX64ingw3O893urPOpoXoT3LxsgrOeKIHAfFELThRUBOqgz5uVx-SPybjxifP7PgU"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-text-primary font-bold">Thiago Brunet</h4>
+<p class="font-label-sm text-label-sm uppercase text-primary">Brasil</p>
+<p class="font-body-sm text-body-sm text-text-muted">Creador del Método Destiny</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «Todos tienen que pasar por The Sapients porque es <strong class="text-gold-light not-italic font-semibold">base fundamental</strong> para quienes quieren crear cosas grandes en la Tierra.»
+            </p>
+</div>
+<div class="mt-6 flex text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+</article>
+<!-- Card 2: Raquel Tavolazzi -->
+<article class="rounded-xl bg-carbon-surface p-8 shadow-md flex flex-col justify-between hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Raquel Tavolazzi, elegant female executive in dark blazer with refined ambient warm studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEkKFdrJb8I67X2t6kZI5soK_S8IfURWxlXMzEEnW6itJG-F2HcUyJGY3hXUNa5ZlOosxPh17N1PzZ71icbQ6veDB2L4AHxqcQeXIPKraP_cif1QrMYiFt1JFLAj1u9urg3XtmTFybEg0dYKdKJJCUrhbz-5yGWgd5Eu9KK5c_taLK1aj8R7I1sUDecojwviof3d7i2OuPbLlUP-x4EU9d_oU8O4UGogZOTZ0z8JI"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-text-primary font-bold">Raquel Tavolazzi</h4>
+<p class="font-label-sm text-label-sm uppercase text-primary">Brasil</p>
+<p class="font-body-sm text-body-sm text-text-muted">Cocreadora de Nitro 10X</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «Elegí a Cash Luna como mi mentor porque veo en él <strong class="text-gold-light not-italic font-semibold">integridad y riqueza en todas las áreas:</strong> espiritual, familiar, financiera y de salud. The Sapients me enseñó a imaginar el futuro y vivirlo por fe.»
+            </p>
+</div>
+<div class="mt-6 flex text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+</article>
+<!-- Card 3: Pyero Tavolazzi -->
+<article class="rounded-xl bg-carbon-surface p-8 shadow-md flex flex-col justify-between hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Pyero Tavolazzi, entrepreneur with long hair and dark shirt smiling with intense clarity against a dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_27uBxj_ztkJ5O7kjjjzE7VeSxy_kW-MF11kPLo1mIzCKJ8m1hi0zB5iZB_Nbl3CwbsFMs3TmtSC0Z-e8Lj3HBMzH-f36uvMbhY2YZeCPf9ze2ly1tPemAgSAoPpJV3Fa1vWEtFTpiIpFTS2vWcoHYLbFDvH7glqv8A0ti5hqJgpChPBQ2sDaNvwxnlr5uXlvqFajNVVDpmCuWuAby5ovwrIkl2RYEJVPsKc2KY0"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-text-primary font-bold">Pyero Tavolazzi</h4>
+<p class="font-label-sm text-label-sm uppercase text-primary">Brasil</p>
+<p class="font-body-sm text-body-sm text-text-muted">Creador de Nitro 10X</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «Tuve una <strong class="text-gold-light not-italic font-semibold">expansión en mi mente</strong> y claridad sobre la sabiduría en la construcción de riqueza. Me llevó a un nuevo nivel de fe y entendimiento.»
+            </p>
+</div>
+<div class="mt-6 flex text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+</article>
+<!-- Card 4: Jorge Martínez -->
+<article class="rounded-xl bg-carbon-surface p-8 shadow-md flex flex-col justify-between hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Jorge Martínez, Canadian executive in casual business wear standing confident against dark stage backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoXtiHhRByKnCNTVEVdpTrcrIsZECEbPLO1mt7_h2jo2aT1WXsFqAEgMQMBsdaXbXM9cSK19DL39WHpKbZSx955xHTTZE0s4RHnEjjL9dDdbxIUB7zT8AJ5kkEVk6KwY24JdrMfzdafaHnWSpX-XW5e61xqteghQltpqTzYvMiBsDDmU9hiBgpKDVPJlrG12yZrD7wEfRlBfuYKCcDf2j24xe-oNH-To8EndAyQvA"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-text-primary font-bold">Jorge Martínez</h4>
+<p class="font-label-sm text-label-sm uppercase text-primary">Canadá</p>
+<p class="font-body-sm text-body-sm text-text-muted">Empresario Internacional</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «The Sapients va a transformarlo todo. Te ensancha la mente, te devuelve a un sueño, <strong class="text-gold-light not-italic font-semibold">te regresa a todo lo grande que algún día creíste</strong> y te da toda esa fuerza de parte de Dios.»
+            </p>
+</div>
+<div class="mt-6 flex text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+</article>
+<!-- Card 5: Chris Méndez -->
+<article class="rounded-xl bg-carbon-surface p-8 shadow-md flex flex-col justify-between hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Chris Mendez, Latin American church leader in red flannel with microphone, charismatic and inspiring look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB36LJR9SszINGIRg6LOre-Nex5GY3rQqyFMNDu8UxkC9Pn0o1a_RjIFSXjhHLH06LcgvTboUKtYIBxOlEAFm4KOayzEPIBbUB8PfFj-Af0h9aRn2BFGK_RqhqIr-bdfjkEztxSebRnLdnsV305dgqJmOVX26BqpxHbaloVTL1c26ROO0MZobeKBAXk8Ejjqkvp7Xw7QjLN6bUfIdEFbe_6HOYs4nPrCFG9W9q-HGQ"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-text-primary font-bold">Chris Méndez</h4>
+<p class="font-label-sm text-label-sm uppercase text-primary">Argentina</p>
+<p class="font-body-sm text-body-sm text-text-muted">Pastor Hillsong América Latina</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «Me sentí totalmente desafiado. Uno puede tener fe para creer todo lo que Dios tiene, pero <strong class="text-gold-light not-italic font-semibold">la fe tiene que caminar junto a la sabiduría</strong> para administrar y cuidar lo que Él nos da.»
+            </p>
+</div>
+<div class="mt-6 flex text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+</article>
+<!-- Card 6: Pepe Caceros -->
+<article class="rounded-xl bg-carbon-surface p-8 shadow-md flex flex-col justify-between hover:bg-carbon-elevated transition-colors">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Pepe Caceros in tailored suit, tech executive and business leader smiling in modern corporate executive office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EplGaDu09XPb3oBO_rydSbKS_ZoHx2gQ5HvN6mRyvXuWKjm9jRj3ug9Nj3BqY4_NwH24UbnnUGmuJ475Oa8RPBBkx3KAikY-X75OokwmJ5D_lWyIoY9ai9h0PEt0a7ESdieXAKQNGvjjQshb4AbSgElLeExY7zOudrqqN8k9Sb1kRWdOfE38ScHVxj-FR7QldkghiOeLUuWr9ZDs-y6fo5RnZhWdmCGi1-rOpyg"/>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-text-primary font-bold">Pepe Caceros</h4>
+<p class="font-label-sm text-label-sm uppercase text-primary">Guatemala</p>
+<p class="font-body-sm text-body-sm text-text-muted">Partner Lenovo, HPE &amp; Apple</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «Lo más importante es que viene de la fuente correcta: no solo de un testimonio vivo, sino además de la fuente más importante: <strong class="text-gold-light not-italic font-semibold">la sabiduría de Dios aplicada a la alta dirección.</strong>»
+            </p>
+</div>
+<div class="mt-6 flex text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SECTION 7: QUALIFICATION MATRIX (¿CALIFICAS PARA THE SAPIENTS®?) -->
+<section class="w-full bg-carbon-surface py-24 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.24em] text-primary font-bold">
+          Criterio de Selección y Admisión
+        </span>
+<h2 class="font-headline-xl text-headline-xl text-text-primary font-headline-xl mt-2">
+          ¿Calificas para The Sapients®?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          Este evento no es un seminario convencional de motivación. Es un santuario de formación de mayordomía superior.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Column A: Para Quién Es (Positive Sovereign) -->
+<div class="rounded-xl bg-carbon-elevated p-8 lg:p-10 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<h3 class="font-title-lg text-title-lg uppercase tracking-wider text-primary font-bold">
+                ¿Para quién es The Sapients®?
+              </h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Para quienes desean alinear su fe con sus decisiones financieras diarias.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Para hombres y mujeres decididos a crear riqueza con propósito, honra y rectitud moral.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Para líderes, empresarios, emprendedores y pastores que no aceptan lo común como su destino.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Para quienes desean ser transformados desde adentro y activar su máximo potencial creativo.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Para los que quieren dejar un legado eterno, no solo una herencia material perecedera.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">Para quienes entienden que la sabiduría de Dios es infinitamente más valiosa que el dinero.</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-6 bg-surface-container-low p-4 rounded-lg">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">
+              Sabiduría como la de las hormigas: se esfuerzan todo el verano, juntando alimento para el invierno sin amo visible.
+            </p>
+</div>
+</div>
+<!-- Column B: Para Quién NO Es (Filtered Out) -->
+<div class="rounded-xl bg-carbon-void p-8 lg:p-10 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-text-muted">
+<span class="material-symbols-outlined text-[24px]">block</span>
+</div>
+<h3 class="font-title-lg text-title-lg uppercase tracking-wider text-text-muted font-bold">
+                ¿Para quién NO es el método?
+              </h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-text-muted text-[20px] flex-shrink-0 mt-0.5">cancel</span>
+<span class="font-body-md text-body-md text-on-surface-variant">No es para quienes buscan fórmulas mágicas rápidas de enriquecimiento sin transformación interior.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-text-muted text-[20px] flex-shrink-0 mt-0.5">cancel</span>
+<span class="font-body-md text-body-md text-on-surface-variant">No es para quienes aman más las riquezas que al Dios que las concede.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-text-muted text-[20px] flex-shrink-0 mt-0.5">cancel</span>
+<span class="font-body-md text-body-md text-on-surface-variant">No es para personas inflexibles que no están dispuestas a cambiar radicalmente su manera de pensar.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-text-muted text-[20px] flex-shrink-0 mt-0.5">cancel</span>
+<span class="font-body-md text-body-md text-on-surface-variant">No es para quienes prefieren excusas y victimismo en lugar de una mayordomía sobria y responsable.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-text-muted text-[20px] flex-shrink-0 mt-0.5">cancel</span>
+<span class="font-body-md text-body-md text-on-surface-variant">No es para quienes exigen bendición sin sujetarse a principios eternos, ni fruto sin raíces.</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-6 bg-surface-container-lowest p-4 rounded-lg">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">
+              Filtro de Integridad: The Sapients® protege la atmósfera de comunión y honor entre los asistentes.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: PRICING & REGISTRATION PASS TIER (FULL DESKTOP CONVERSION) -->
+<section class="w-full bg-carbon-void py-24 px-6 lg:px-12 relative overflow-hidden" id="inscripcion">
+<!-- Atmospheric background flares -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+<!-- Pre-heading -->
+<span class="font-label-sm text-label-sm uppercase tracking-[0.28em] text-primary font-bold">
+        Asegura Tu Entrada Oficial
+      </span>
+<h2 class="font-headline-xl text-headline-xl text-text-primary font-headline-xl text-center mt-2 mb-4">
+        Inscripción The Sapients® 2026
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant text-center max-w-lg mb-10">
+        3 Días de Inmersión Total • 18, 19 y 20 de Noviembre • Las Cumbres Convention Center, Guatemala
+      </p>
+<!-- LIVE COUNTDOWN TIMER MODULE -->
+<div class="w-full max-w-xl grid grid-cols-4 gap-3 mb-12">
+<div class="bg-carbon-elevated p-4 rounded-lg text-center shadow-md">
+<div class="font-headline-lg text-headline-lg text-primary font-headline-lg" id="cd-days">45</div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted">Días</div>
+</div>
+<div class="bg-carbon-elevated p-4 rounded-lg text-center shadow-md">
+<div class="font-headline-lg text-headline-lg text-primary font-headline-lg" id="cd-hours">12</div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted">Horas</div>
+</div>
+<div class="bg-carbon-elevated p-4 rounded-lg text-center shadow-md">
+<div class="font-headline-lg text-headline-lg text-primary font-headline-lg" id="cd-mins">44</div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted">Minutos</div>
+</div>
+<div class="bg-carbon-elevated p-4 rounded-lg text-center shadow-md">
+<div class="font-headline-lg text-headline-lg text-primary font-headline-lg" id="cd-secs">29</div>
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted">Segundos</div>
+</div>
+</div>
+<!-- THE MASTER PASS CONTAINER -->
+<div class="w-full rounded-2xl bg-carbon-surface p-8 lg:p-12 shadow-2xl flex flex-col items-center text-center relative overflow-hidden">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+          Cupo Estrictamente Limitado • Solo Presencial
+        </div>
+<h3 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg">
+          Pase de Acceso Total
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2 mb-8">
+          Experiencia completa de 3 días con enseñanza directa de Cash Luna y entrega de acreditación.
+        </p>
+<!-- Deliverables Checklist (2 Columns on Desktop) -->
+<div class="w-full max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-4 text-left mb-10 bg-surface-container-low p-6 rounded-xl">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">done</span>
+<span class="font-body-md text-body-md text-on-surface">Acceso presencial a las 18 Master Classes intensivas (3 días completos)</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">done</span>
+<span class="font-body-md text-body-md text-on-surface">Libro oficial impreso The Sapients® (200+ páginas de enseñanza)</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">done</span>
+<span class="font-body-md text-body-md text-on-surface">Acceso exclusivo al devocional intensivo: 21 Días de Sabiduría</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">done</span>
+<span class="font-body-md text-body-md text-on-surface">Coffee Break ejecutivo servido durante todos los días del evento</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">done</span>
+<span class="font-body-md text-body-md text-on-surface">Parqueo seguro reservado en Las Cumbres Convention Center</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">done</span>
+<span class="font-body-md text-body-md text-on-surface">Asiento ergonómico con visual privilegiada directa al escenario</span>
+</div>
+<div class="flex items-start gap-3 md:col-span-2">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">done</span>
+<span class="font-body-md text-body-md text-on-surface">Traducción simultánea en tiempo real disponible (Inglés / Portugués)</span>
+</div>
+</div>
+<!-- Conversion Action -->
+<a class="w-full max-w-md inline-flex items-center justify-center gap-3 px-8 py-5 rounded bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-on-primary font-label-lg text-label-lg uppercase tracking-widest font-bold shadow-2xl hover:brightness-110 active:scale-[0.98] transition-all" href="https://wa.me/50230719826?text=Deseo%20inscribirme%20a%20The%20Sapients%202026" rel="noopener noreferrer" target="_blank">
+<span>Inscribirse Ahora — Cupo Limitado</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<!-- Payment assurance badge -->
+<div class="flex items-center justify-center gap-6 mt-6 text-text-muted font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">credit_card</span>
+            Pago seguro con Tarjeta de Crédito / Débito
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-whatsapp-green text-[16px]">chat</span>
+<a class="hover:text-primary transition-colors" href="https://wa.me/50230719826">¿Dudas? Consulta con Concierge</a>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: FREQUENTLY ASKED QUESTIONS (FAQ INTERACTIVO) -->
+<section class="w-full bg-carbon-surface py-24 px-6 lg:px-12">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.24em] text-primary font-bold">
+          Claridad Absoluta
+        </span>
+<h2 class="font-headline-xl text-headline-xl text-text-primary font-headline-xl mt-2">
+          ¿Aún tienes dudas? Puedes resolverlas aquí
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+          Respuestas a las consultas frecuentes sobre la experiencia The Sapients® 2026.
+        </p>
+</div>
+<!-- Accordion Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- FAQ Item 1 -->
+<div class="bg-carbon-elevated p-6 rounded-xl shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary text-[22px]">schedule</span>
+<h3 class="font-title-md text-title-md text-text-primary font-bold">¿Cuánto dura The Sapients® y cuándo es?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Duración:</strong> 3 días intensivos de inmersión total.<br/>
+<strong class="text-on-surface">Próxima fecha:</strong> 18, 19 y 20 de noviembre de 2026.<br/>
+<strong class="text-on-surface">Horario:</strong> De 9:00 a.m. a 5:00 p.m. cada jornada.
+          </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-carbon-elevated p-6 rounded-xl shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary text-[22px]">pin_drop</span>
+<h3 class="font-title-md text-title-md text-text-primary font-bold">¿En dónde será realizado el evento?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Lugar:</strong> Las Cumbres Convention Center, km. 17 a San José Pinula, Guatemala.<br/>
+<strong class="text-on-surface">Modalidad:</strong> 100% presencial para preservar la transferencia de sabiduría y networking de alto nivel.
+          </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-carbon-elevated p-6 rounded-xl shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary text-[22px]">credit_score</span>
+<h3 class="font-title-md text-title-md text-text-primary font-bold">¿Cuáles son las formas de pago?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            El sistema de admisión procesa pagos seguros internacionales a través de tarjeta de crédito o débito (Visa, Mastercard, American Express). Si requieres soporte de facturación o pago corporativo, puedes coordinarlo vía WhatsApp Concierge.
+          </p>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-carbon-elevated p-6 rounded-xl shadow-md">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary text-[22px]">inventory_2</span>
+<h3 class="font-title-md text-title-md text-text-primary font-bold">¿Qué incluye tu inscripción oficial?</h3>
+</div>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1.5">
+<li>• Libro físico oficial The Sapients® (200+ páginas).</li>
+<li>• Acceso al devocional digital de 21 días de sabiduría.</li>
+<li>• Acceso presencial a las 18 Master Classes.</li>
+<li>• Coffee Break ejecutivo los 3 días del evento.</li>
+<li>• Parqueo seguro incluido durante todo el evento.</li>
+<li>• Asiento cómodo con excelente visual y acústica.</li>
+<li>• Traducción simultánea (si aplica).</li>
+</ul>
+</div>
+</div>
+<!-- Concierge Floating Callout -->
+<div class="mt-12 text-center">
+<a class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-surface-container text-whatsapp-green font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-high transition-colors" href="https://wa.me/50230719826" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>¿Tienes una consulta específica? Escríbenos directamente por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic Real-time Countdown Simulation
+  (function() {
+    var targetDate = new Date("2026-11-18T09:00:00").getTime();
+    function updateCountdown() {
+      var now = new Date().getTime();
+      var diff = targetDate - now;
+      if (diff > 0) {
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        var secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+        var elDays = document.getElementById('cd-days');
+        var elHours = document.getElementById('cd-hours');
+        var elMins = document.getElementById('cd-mins');
+        var elSecs = document.getElementById('cd-secs');
+
+        if (elDays) elDays.innerText = days;
+        if (elHours) elHours.innerText = hours < 10 ? '0' + hours : hours;
+        if (elMins) elMins.innerText = mins < 10 ? '0' + mins : mins;
+        if (elSecs) elSecs.innerText = secs < 10 ? '0' + secs : secs;
+      }
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  })();
+</script></main><footer class="w-full bg-carbon-void border-t border-primary/20 pt-16 pb-12 mt-auto"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12"><div class="md:col-span-1 space-y-4"><div class="flex items-center gap-3"><img alt="Image from https://cdn.prod.website-files.com/6838ba5d22bcfa773198b2fe/68f0896ae8681ca92ef8ebbd_logos%20sapients_Mesa%20de%20trabajo%201.avif" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZVFYi3nrWlq7SlwvdCnHASmXnV2KTJleX9JIzEaPvdPEKFeNFOumKo3kBf0AiVx683VDqeRDhuPMiEl-qUjWkKhA7VZmPhPSeZpbWdIiIyhRWckRHvC2QY_D6dZWWbHOzcy3M61hgXnbsSrCnAKlExYzBcWeSJu3QAUOxTsTdzOXHi5uEltDIQZhX1CUjihK8B7-hCltuAzbQFNnAeIa5amaxM-cq8-DmRx6udw0X"/><span class="font-title-md text-title-md uppercase tracking-wider text-text-primary">The Sapients<span class="text-primary text-[10px] align-super">®</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">El círculo de sabiduría, honra y riquezas para líderes soberanos bajo los preceptos del Pastor Cash Luna.</p><div class="flex items-center gap-3 pt-2"><a aria-label="YouTube" class="w-9 h-9 rounded bg-carbon-surface flex items-center justify-center text-on-surface-variant hover:text-primary border border-primary/20 hover:border-primary/50 transition-all" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a><a aria-label="Instagram" class="w-9 h-9 rounded bg-carbon-surface flex items-center justify-center text-on-surface-variant hover:text-primary border border-primary/20 hover:border-primary/50 transition-all" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="TikTok" class="w-9 h-9 rounded bg-carbon-surface flex items-center justify-center text-on-surface-variant hover:text-primary border border-primary/20 hover:border-primary/50 transition-all" href="#"><span class="material-symbols-outlined text-[18px]">play_circle</span></a><a aria-label="Facebook" class="w-9 h-9 rounded bg-carbon-surface flex items-center justify-center text-on-surface-variant hover:text-primary border border-primary/20 hover:border-primary/50 transition-all" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a></div></div><div class="space-y-3"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Exploración</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Inicio</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="los-3-pilares" href="#">Los 3 Pilares</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="el-mentor" href="#">El Mentor</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="libro-oficial" href="#">Libro Oficial</a></li></ul></div><div class="space-y-3"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Soporte &amp; Admisión</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="preguntas-frecuentes" href="#">Preguntas Frecuentes</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="testimonios" href="#">Testimonios</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="concierge-whatsapp" href="#"><span class="material-symbols-outlined text-[14px] text-whatsapp-green">chat</span>Concierge WhatsApp</a></li><li class="font-body-sm text-body-sm"><a class="text-primary hover:underline font-semibold" data-path="inscribirse-ahora" href="#">Registro Prioritario</a></li></ul></div><div class="space-y-3"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Legal &amp; Privacidad</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="terminos-y-condiciones" href="#">Términos &amp; Condiciones</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="politica-de-privacidad" href="#">Política de Privacidad</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="politica-de-reembolsos" href="#">Política de Reembolsos</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="codigo-de-honor" href="#">Código de Honor Sovereign</a></li></ul></div></div><div class="border-t border-surface-container-high pt-8 flex flex-col md:flex-row items-center justify-between gap-4"><p class="font-body-sm text-body-sm text-text-muted text-center md:text-left">© 2026 The Sapients®. Todos los derechos reservados. Dirigido por Cash Luna.</p><div class="flex items-center gap-6"><a class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted hover:text-on-surface transition-colors" data-path="terminos-y-condiciones" href="#">Términos y Condiciones</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted hover:text-on-surface transition-colors" data-path="politica-de-privacidad" href="#">Política de Privacidad</a></div></div></div></footer></body></html>

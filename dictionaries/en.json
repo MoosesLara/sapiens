@@ -1,0 +1,45 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home",
+      "pillars": "The 3 Pillars",
+      "mentor": "The Mentor",
+      "testimonials": "Testimonials",
+      "book": "Official Book",
+      "faq": "FAQ"
+    },
+    "cta": "Enroll Now"
+  },
+  "urgencyRibbon": {
+    "soldOutPrefix": "August Edition",
+    "soldOutBadge": "Sold Out",
+    "nextDatePrefix": "Next Date:",
+    "nextDate": "Nov 18, 19 & 20, 2026",
+    "modality": "100% In-Person",
+    "scarcity": "Limited Availability"
+  },
+  "hero": {
+    "badge": "18 Intensive Master Classes • 3-Day Immersion",
+    "titlePrefix": "The",
+    "titleHighlight": "Sapients",
+    "subtitle": "School of Faith and Wisdom",
+    "descriptionPart1": "You will learn to manage faith and wisdom to build",
+    "descriptionHighlight": "honorable wealth",
+    "descriptionPart2": "without losing your life.",
+    "dateLabel": "Official Date",
+    "dateValue": "November 18, 19 & 20, 2026",
+    "locationLabel": "Sovereign Venue",
+    "locationValue": "Las Cumbres Center, Guatemala",
+    "modalityLabel": "Modality",
+    "modalityValue": "100% In-Person • Limited Capacity",
+    "cta": "Enroll Now",
+    "disclaimer": "Access strictly reserved by registration order. Limited spots.",
+    "imageBadge": "Annual In-Person Immersion",
+    "imageTitle": "Las Cumbres Convention Center",
+    "imageLocation": "Km 17 to San José Pinula, Guatemala",
+    "imageHighlight": "Masterful Teaching"
+  },
+  "manifesto": {
+    "words": ["Honor", "Life", "Wealth", "Divine Wisdom"]
+  }
+}

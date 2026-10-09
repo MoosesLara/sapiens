@@ -1,0 +1,45 @@
+{
+  "header": {
+    "nav": {
+      "home": "Inicio",
+      "pillars": "Los 3 Pilares",
+      "mentor": "El Mentor",
+      "testimonials": "Testimonios",
+      "book": "Libro Oficial",
+      "faq": "Preguntas Frecuentes"
+    },
+    "cta": "Inscribirse Ahora"
+  },
+  "urgencyRibbon": {
+    "soldOutPrefix": "Edición Agosto",
+    "soldOutBadge": "Agotada",
+    "nextDatePrefix": "Próxima Fecha:",
+    "nextDate": "18, 19 y 20 Nov 2026",
+    "modality": "100% Presencial",
+    "scarcity": "Cupo Restringido"
+  },
+  "hero": {
+    "badge": "18 Master Classes Intensivas • 3 Días de Inmersión",
+    "titlePrefix": "The",
+    "titleHighlight": "Sapients",
+    "subtitle": "Escuela de Fe y Sabiduría",
+    "descriptionPart1": "Aprenderás a administrar la fe y la sabiduría para construir",
+    "descriptionHighlight": "riquezas con honra",
+    "descriptionPart2": "sin perder la vida.",
+    "dateLabel": "Fecha Oficial",
+    "dateValue": "18, 19 y 20 Noviembre 2026",
+    "locationLabel": "Sede Soberana",
+    "locationValue": "Las Cumbres Center, Guatemala",
+    "modalityLabel": "Modalidad",
+    "modalityValue": "100% Presencial • Cupo Restringido",
+    "cta": "Inscribirse Ahora",
+    "disclaimer": "Acceso estrictamente reservado por orden de registro. Cupos limitados.",
+    "imageBadge": "Inmersión Anual Presencial",
+    "imageTitle": "Las Cumbres Convention Center",
+    "imageLocation": "Km 17 a San José Pinula, Guatemala",
+    "imageHighlight": "Enseñanza Magistral"
+  },
+  "manifesto": {
+    "words": ["Honra", "Vida", "Riquezas", "Sabiduría Divina"]
+  }
+}
