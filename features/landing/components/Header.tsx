@@ -107,7 +107,7 @@ export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
               alt="The Sapients Logo" 
               width={240} 
               height={48}  
-              className={`w-auto object-contain transition-all duration-500 group-hover:scale-105 ${isScrolled ? 'h-6 sm:h-8 md:h-10 lg:h-12' : 'h-8 sm:h-10 md:h-14 lg:h-20'}`} 
+              className={`w-auto object-contain transition-all duration-500 group-hover:scale-105 ${isScrolled ? 'h-10 md:h-12' : 'h-16 md:h-20'}`} 
             />
           </a>
 
