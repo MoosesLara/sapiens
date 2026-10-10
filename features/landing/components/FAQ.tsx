@@ -30,7 +30,7 @@ const faqs: FAQItem[] = [
   {
     question: '¿Cuáles son las formas de pago?',
     answer: (
-      <>El sistema de admisión procesa pagos seguros internacionales a través de tarjeta de crédito o débito (Visa, Mastercard, American Express). Si requieres soporte de facturación o pago corporativo, puedes coordinarlo vía WhatsApp.</>
+      <>El sistema de admisión procesa pagos seguros internacionales a través de tarjeta de crédito o débito (Visa, Mastercard, American Express). Si requieres soporte de facturación o pago corporativo, puedes coordinarlo vía <a href="https://wa.me/50239601672?text=Hola%2C%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20programa%20The%20Sapients.%20Quisiera%20conocer%20los%20detalles%20de%20inscripci%C3%B3n%20y%20los%20pr%C3%B3ximos%20pasos%20para%20asegurar%20mi%20acceso." target="_blank" rel="noopener noreferrer" className="text-[#B88E52] hover:underline">WhatsApp</a>.</>
     )
   },
   {

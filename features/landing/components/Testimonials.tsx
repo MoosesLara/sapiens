@@ -9,42 +9,42 @@ const testimonialsData = [
     country: 'Brasil',
     role: 'Creador del Método Destiny',
     quote: 'Todos tienen que pasar por The Sapients porque es base fundamental para quienes quieren crear cosas grandes en la Tierra.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD0_-1iB8S_tJgorjXljCNIW0ev6Wkdb-Aucg-LUXCRwddCG-Sdd6rQJWWBzSpNk1GwxL0OxEhvmwrH7kK2cWoXdHJnYmAeF6xvX9XtkYrAJ9eqebuc2hiav1NPZOAx60iZsiruOCzppWsEW-jPeV-l0qidB-ajFJk1ehneUMIX64ingw3O893urPOpoXoT3LxsgrOeKIHAfFELThRUBOqgz5uVx-SPybjxifP7PgU'
+    image: '/src/thiago_brunet.jpg'
   },
   {
     name: 'Raquel Tavolazzi',
     country: 'Brasil',
     role: 'Cocreadora de Nitro 10X',
     quote: 'Elegí a Cash Luna como mi mentor porque veo en él integridad y riqueza en todas las áreas: espiritual, familiar, financiera y de salud.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBEkKFdrJb8I67X2t6kZI5soK_S8IfURWxlXMzEEnW6itJG-F2HcUyJGY3hXUNa5ZlOosxPh17N1PzZ71icbQ6veDB2L4AHxqcQeXIPKraP_cif1QrMYiFt1JFLAj1u9urg3XtmTFybEg0dYKdKJJCUrhbz-5yGWgd5Eu9KK5c_taLK1aj8R7I1sUDecojwviof3d7i2OuPbLlUP-x4EU9d_oU8O4UGogZOTZ0z8JI'
+    image: '/src/Raquel_Tavolazzi.png'
   },
   {
     name: 'Pyero Tavolazzi',
     country: 'Brasil',
     role: 'Creador de Nitro 10X',
     quote: 'Tuve una expansión en mi mente y claridad sobre la sabiduría en la construcción de riqueza. Me llevó a un nuevo nivel de fe y entendimiento.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_27uBxj_ztkJ5O7kjjjzE7VeSxy_kW-MF11kPLo1mIzCKJ8m1hi0zB5iZB_Nbl3CwbsFMs3TmtSC0Z-e8Lj3HBMzH-f36uvMbhY2YZeCPf9ze2ly1tPemAgSAoPpJV3Fa1vWEtFTpiIpFTS2vWcoHYLbFDvH7glqv8A0ti5hqJgpChPBQ2sDaNvwxnlr5uXlvqFajNVVDpmCuWuAby5ovwrIkl2RYEJVPsKc2KY0'
+    image: '/src/Pyero_Tavolazzi.jpg'
   },
   {
-    name: 'Jorge Martínez',
-    country: 'Canadá',
-    role: 'Empresario Internacional',
+    name: 'Otoniel Font',
+    country: 'Puerto Rico',
+    role: 'Pastor y Autor',
     quote: 'The Sapients va a transformarlo todo. Es algo increíble: te ensancha la mente, te devuelve un sueño, te regresa a todo lo grande que algún día creíste y te da toda esa fuerza de parte de Dios.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBoXtiHhRByKnCNTVEVdpTrcrIsZECEbPLO1mt7_h2jo2aT1WXsFqAEgMQMBsdaXbXM9cSK19DL39WHpKbZSx955xHTTZE0s4RHnEjjL9dDdbxIUB7zT8AJ5kkEVk6KwY24JdrMfzdafaHnWSpX-XW5e61xqteghQltpqTzYvMiBsDDmU9hiBgpKDVPJlrG12yZrD7wEfRlBfuYKCcDf2j24xe-oNH-To8EndAyQvA'
+    image: '/src/otoniel_font.jpg'
   },
   {
     name: 'Chris Méndez',
     country: 'Argentina',
     role: 'Pastor Hillsong América Latina',
     quote: 'Me sentí totalmente desafiado porque uno puede tener fe para creer todo lo que Dios tiene para nosotros, pero la fe tiene que caminar junto a la sabiduría para administrar y cuidar lo que Él nos da.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB36LJR9SszINGIRg6LOre-Nex5GY3rQqyFMNDu8UxkC9Pn0o1a_RjIFSXjhHLH06LcgvTboUKtYIBxOlEAFm4KOayzEPIBbUB8PfFj-Af0h9aRn2BFGK_RqhqIr-bdfjkEztxSebRnLdnsV305dgqJmOVX26BqpxHbaloVTL1c26ROO0MZobeKBAXk8Ejjqkvp7Xw7QjLN6bUfIdEFbe_6HOYs4nPrCFG9W9q-HGQ'
+    image: '/src/chris_mendez.jpg'
   },
   {
     name: 'Pepe Caceros',
     country: 'Guatemala',
     role: 'Partner Lenovo, HPE & Apple',
     quote: 'Lo más importante es que la información viene de la fuente correcta: no solo de una persona que es testimonio vivo de lo que ha aprendido y de lo que enseña, sino además de la fuente más importante: la sabiduría de Dios.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB0EplGaDu09XPb3oBO_rydSbKS_ZoHx2gQ5HvN6mRyvXuWKjm9jRj3ug9Nj3BqY4_NwH24UbnnUGmuJ475Oa8RPBBkx3KAikY-X75OokwmJ5D_lWyIoY9ai9h0PEt0a7ESdieXAKQNGvjjQshb4AbSgElLeExY7zOudrqqN8k9Sb1kRWdOfE38ScHVxj-FR7QldkghiOeLUuWr9ZDs-y6fo5RnZhWdmCGi1-rOpyg'
+    image: '/src/pepe_caceros.jpg'
   }
 ];
 
@@ -80,7 +80,7 @@ export default function Testimonials() {
           </div>
 
           {/* 3D Carousel Slider */}
-          <div className="relative w-full h-[450px] md:h-[500px] mt-8 grid place-items-center">
+          <div className="relative w-full h-[600px] md:h-[680px] mt-8 grid place-items-center">
             {testimonialsData.map((t, idx) => {
               const diff = idx - activeIndex;
               const absDiff = Math.abs(diff);
@@ -97,7 +97,7 @@ export default function Testimonials() {
               return (
                 <motion.div
                   key={idx}
-                  className="col-start-1 row-start-1 w-full max-w-[320px] sm:max-w-[480px] md:max-w-[550px] cursor-pointer"
+                  className="col-start-1 row-start-1 w-full max-w-[340px] sm:max-w-[420px] md:max-w-[480px] cursor-pointer"
                   onClick={() => setActiveIndex(idx)}
                   initial={false}
                   animate={{
@@ -114,27 +114,60 @@ export default function Testimonials() {
                   }}
                 >
                   {/* Card Content */}
-                  <div className={`w-full bg-[#0c0c0c]/90 backdrop-blur-3xl border p-6 sm:p-10 md:p-14 rounded-3xl flex flex-col justify-between items-center text-center transition-all duration-500
-                    ${isCenter ? 'border-primary/40 shadow-[0_0_80px_rgba(212,175,55,0.15)]' : 'border-white/5 shadow-none hover:border-white/15'}`}>
+                  <div className={`relative w-full h-[550px] md:h-[620px] rounded-[2.5rem] flex flex-col transition-all duration-500 overflow-hidden bg-gradient-to-br from-carbon-surface to-[#050505]
+                    ${isCenter ? 'border border-primary/30 shadow-[0_20px_80px_rgba(212,175,55,0.15)]' : 'border border-white/5 shadow-none'}`}>
                     
-                    <p className={`font-body-lg text-body-lg leading-relaxed mb-10 transition-colors duration-500
-                      ${isCenter ? 'text-white' : 'text-white/40'}`}>
-                      «{t.quote}»
-                    </p>
-                    
-                    <div className="flex flex-col items-center mt-auto">
-                      <div className={`w-16 h-16 rounded-full overflow-hidden mb-5 transition-all duration-500 border border-white/10 ${isCenter ? 'opacity-100 ring-2 ring-primary/30' : 'opacity-60 scale-90'}`}>
-                        <Image src={t.image} alt={t.name} width={100} height={100} className="w-full h-full object-cover" />
+                    {/* The Central Portrait Image */}
+                    <div className="absolute top-[8%] left-[15%] right-[15%] bottom-[26%] rounded-[2rem] overflow-hidden shadow-2xl z-0 border border-white/5">
+                      <Image src={t.image} alt={t.name} fill className="object-cover transition-transform duration-700 hover:scale-105" />
+                      {/* Subtle dark gradient overlay at the bottom to ensure text readability if it overlaps */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-carbon-void/90 via-transparent to-transparent"></div>
+                    </div>
+
+                    <div className="relative z-10 w-full h-full flex flex-col p-6 sm:p-8">
+                      
+                      {/* Name - Top Left */}
+                      <div className="pt-2 sm:pt-4 pointer-events-none">
+                        <h3 className="flex flex-col text-left drop-shadow-2xl">
+                          <span className="font-serif italic text-4xl sm:text-5xl text-white/90" style={{ fontFamily: 'Georgia, serif' }}>
+                            {t.name.split(' ')[0]}
+                          </span>
+                          <span className="font-headline-sm text-2xl sm:text-3xl text-white font-black uppercase tracking-[0.2em] -mt-1">
+                            {t.name.split(' ').slice(1).join(' ')}
+                          </span>
+                        </h3>
                       </div>
-                      <h4 className={`font-title-lg text-title-lg tracking-wider uppercase transition-colors duration-500 ${isCenter ? 'text-primary' : 'text-white/40'}`}>
-                        {t.name}
-                      </h4>
-                      <p className={`font-label-sm text-micro uppercase tracking-[0.2em] mt-1 transition-colors duration-500 ${isCenter ? 'text-white/80' : 'text-white/20'}`}>
-                        {t.country}
-                      </p>
-                      <p className={`font-label-sm text-micro uppercase tracking-widest mt-1 transition-colors duration-500 ${isCenter ? 'text-white/50' : 'text-white/10'}`}>
-                        {t.role}
-                      </p>
+
+                      {/* Graphic lines container */}
+                      <div className="absolute inset-0 z-10 pointer-events-none opacity-60">
+                        {/* Vertical line: starts below name, goes down */}
+                        <div className="absolute left-[36px] sm:left-[44px] top-[100px] sm:top-[115px] bottom-[28%] w-[2px] bg-white"></div>
+                        {/* Horizontal line: connects from vertical line to the right role text */}
+                        <div className="absolute left-[36px] sm:left-[44px] right-[40%] bottom-[28%] h-[2px] bg-white"></div>
+                      </div>
+
+                      {/* Role & Country - Bottom Right of Image */}
+                      <div className="absolute bottom-[28%] right-6 sm:right-8 z-10 flex flex-col items-end pointer-events-none">
+                        <div className="text-right flex flex-col drop-shadow-2xl max-w-[180px]">
+                          <span className="font-bold text-white uppercase text-sm sm:text-base leading-tight tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                            {t.role}
+                          </span>
+                          <span className="text-primary text-[10px] sm:text-xs mt-1 font-bold tracking-[0.3em] uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                            {t.country}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* The Quote - Bottom */}
+                      <div className="mt-auto relative z-20 w-full bg-carbon-surface/90 backdrop-blur-xl rounded-2xl border border-white/5 p-4 sm:p-5 shadow-2xl">
+                        <svg className="w-5 h-5 text-primary/40 absolute -top-2.5 -left-2 bg-[#050505] rounded-full p-0.5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p className={`font-body-md text-sm sm:text-[15px] leading-relaxed text-center italic transition-colors duration-500 ${isCenter ? 'text-white/90' : 'text-white/40'}`}>
+                          "{t.quote}"
+                        </p>
+                      </div>
+
                     </div>
                   </div>
                 </motion.div>

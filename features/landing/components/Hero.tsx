@@ -126,23 +126,20 @@ export default function Hero({ dict }: { dict: any }) {
           </div>
         </motion.div>
         
-        {/*  Hero Call To Action Group  */}
-        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 mt-10 w-full sm:w-auto">
+        {/*  Hero Scroll Down Indicator  */}
+        <motion.div variants={itemVariants} className="flex justify-center mt-14 w-full">
           <motion.a 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 md:gap-3 px-4 py-3 md:px-8 md:py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-on-primary font-label-md md:font-label-lg text-label-md md:text-label-lg uppercase tracking-wider font-bold shadow-xl transition-colors cursor-none text-center" 
-            href="#inscripcion"
+            animate={{ y: [0, 15, 0] }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+            whileHover={{ scale: 1.2, filter: "drop-shadow(0px 0px 8px rgba(184,142,82,0.6))" }}
+            whileTap={{ scale: 0.9 }}
+            className="flex items-center justify-center text-primary hover:text-primary-light transition-all cursor-none p-4" 
+            href="#inscribirse-ahora"
+            aria-label="Ir a inscripción"
           >
-            <span>{dict.cta}</span>
-            <div className="relative w-4 h-4 md:w-6 md:h-6 overflow-hidden flex items-center justify-center shrink-0">
-              <svg className="w-4 h-4 md:w-6 md:h-6 absolute transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
-              <svg className="w-4 h-4 md:w-6 md:h-6 absolute -translate-x-[150%] transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-              </svg>
-            </div>
+            <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+            </svg>
           </motion.a>
         </motion.div>
         

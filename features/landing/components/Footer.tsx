@@ -1,8 +1,23 @@
 'use client';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import logoImg from '../../../public/logo.avif';
 
 export default function Footer() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <footer className="w-full bg-carbon-void border-t border-white/5 pt-24 pb-12 mt-auto">
       <div className="relative w-[90%] max-w-[1600px] mx-auto px-6 lg:px-12">
@@ -12,7 +27,7 @@ export default function Footer() {
           
           {/* WhatsApp Button */}
           <a 
-          href="https://wa.me/" 
+          href="https://wa.me/50239601672?text=Hola%2C%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20programa%20The%20Sapients.%20Quisiera%20conocer%20los%20detalles%20de%20inscripci%C3%B3n%20y%20los%20pr%C3%B3ximos%20pasos%20para%20asegurar%20mi%20acceso." 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center justify-center text-white/40 hover:text-[#25D366] transition-all duration-300 hover:scale-110 group cursor-pointer"
@@ -26,7 +41,7 @@ export default function Footer() {
         {/* Scroll to Top Arrow - Luxury Edition (Fixed Floating) */}
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="flex items-center justify-center p-4 text-white/40 hover:text-primary transition-colors group cursor-none"
+          className={`flex items-center justify-center p-4 text-white/40 hover:text-primary transition-all duration-500 group cursor-none ${showScrollTop ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none'}`}
           aria-label="Volver al inicio"
         >
           <div className="relative w-6 h-6 overflow-hidden flex items-center justify-center">

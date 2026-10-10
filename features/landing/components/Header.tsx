@@ -164,21 +164,13 @@ export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
             </div>
 
             {/* CTA Button */}
-            <Link 
+            <a 
               href="#inscribirse-ahora"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="hidden md:inline-flex group items-center justify-center gap-2 px-4 py-2 lg:px-6 lg:py-2.5 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-md lg:font-label-lg text-label-md lg:text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 hover:shadow-[0_4px_24px_rgba(237,192,111,0.4)] active:scale-[0.98] transition-all font-bold cursor-none"
+              onClick={(e) => handleSmoothScroll(e, '#inscribirse-ahora')}
+              className="hidden md:inline-flex group items-center justify-center gap-2 px-4 py-2 lg:px-6 lg:py-2.5 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-md lg:font-label-lg text-label-md lg:text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 hover:shadow-[0_4px_24px_rgba(237,192,111,0.4)] active:scale-[0.98] transition-all font-bold cursor-pointer"
             >
               <span>{safeDict.cta}</span>
-              <div className="relative w-4 h-4 lg:w-5 lg:h-5 overflow-hidden flex items-center justify-center">
-                <svg className="w-4 h-4 lg:w-5 lg:h-5 absolute transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-[150%]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-                <svg className="w-4 h-4 lg:w-5 lg:h-5 absolute -translate-x-[150%] transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-x-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </Link>
+            </a>
 
             {/* Mobile Menu Toggle */}
             <button 
@@ -237,16 +229,13 @@ export default function Header({ dict, lang }: { dict?: any, lang?: string }) {
             ))}
             
             {/* Mobile CTA Button */}
-            <Link 
+            <a 
               href="#inscribirse-ahora"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="mt-6 group w-full flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-md md:font-label-lg text-label-md md:text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 active:scale-[0.98] transition-all font-bold"
+              onClick={(e) => handleSmoothScroll(e, '#inscribirse-ahora')}
+              className="mt-6 group w-full flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-4 rounded-none bg-gradient-to-r from-gold-light via-primary-container to-gold-deep text-carbon-void font-label-md md:font-label-lg text-label-md md:text-label-lg uppercase tracking-wider shadow-[0_4px_16px_rgba(237,192,111,0.25)] hover:brightness-110 active:scale-[0.98] transition-all font-bold cursor-pointer"
             >
               <span>{safeDict.cta}</span>
-              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
