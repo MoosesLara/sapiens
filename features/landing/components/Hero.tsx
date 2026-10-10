@@ -1,7 +1,7 @@
 'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-
+import templocasaImg from '../../../public/src/templocasa.jpg';
 export default function Hero({ dict }: { dict: any }) {
   const sectionRef = useRef<HTMLElement>(null);
   
@@ -157,7 +157,7 @@ export default function Hero({ dict }: { dict: any }) {
         variants={imageVariants}
         className="relative z-10 w-[90%] max-w-[1600px] mt-20 mb-10 rounded-none overflow-hidden shadow-2xl bg-surface-container-lowest border border-white/5"
       >
-        <div className="min-h-[380px] sm:min-h-[450px] lg:min-h-0 lg:aspect-[21/9] w-full bg-cover bg-center relative" style={{ backgroundImage: "url('/src/templocasa.jpg')" }}>
+        <div className="min-h-[380px] sm:min-h-[450px] lg:min-h-0 lg:aspect-[21/9] w-full bg-cover bg-center relative" style={{ backgroundImage: `url('${templocasaImg.src}')` }}>
           <div className="absolute inset-0 bg-gradient-to-t from-carbon-void via-carbon-void/60 to-transparent flex flex-col sm:flex-row items-start sm:items-end justify-end sm:justify-between p-6 sm:p-12 gap-6">
             <div className="text-left flex flex-col">
               <span className="font-label-sm text-xs sm:text-label-sm uppercase text-primary font-bold mb-2 sm:mb-3">
