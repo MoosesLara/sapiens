@@ -3,48 +3,55 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import thiagoImg from '../../../public/src/thiago_brunet.jpg';
+import raquelImg from '../../../public/src/Raquel_Tavolazzi.png';
+import pyeroImg from '../../../public/src/Pyero_Tavolazzi.jpg';
+import otonielImg from '../../../public/src/otoniel_font.jpg';
+import chrisImg from '../../../public/src/chris_mendez.jpg';
+import pepeImg from '../../../public/src/pepe_caceros.jpg';
+
 const testimonialsData = [
   {
     name: 'Thiago Brunet',
     country: 'Brasil',
     role: 'Creador del Método Destiny',
     quote: 'Todos tienen que pasar por The Sapients porque es base fundamental para quienes quieren crear cosas grandes en la Tierra.',
-    image: '/src/thiago_brunet.jpg'
+    image: thiagoImg
   },
   {
     name: 'Raquel Tavolazzi',
     country: 'Brasil',
     role: 'Cocreadora de Nitro 10X',
     quote: 'Elegí a Cash Luna como mi mentor porque veo en él integridad y riqueza en todas las áreas: espiritual, familiar, financiera y de salud.',
-    image: '/src/Raquel_Tavolazzi.png'
+    image: raquelImg
   },
   {
     name: 'Pyero Tavolazzi',
     country: 'Brasil',
     role: 'Creador de Nitro 10X',
     quote: 'Tuve una expansión en mi mente y claridad sobre la sabiduría en la construcción de riqueza. Me llevó a un nuevo nivel de fe y entendimiento.',
-    image: '/src/Pyero_Tavolazzi.jpg'
+    image: pyeroImg
   },
   {
     name: 'Otoniel Font',
     country: 'Puerto Rico',
     role: 'Pastor y Autor',
     quote: 'The Sapients va a transformarlo todo. Es algo increíble: te ensancha la mente, te devuelve un sueño, te regresa a todo lo grande que algún día creíste y te da toda esa fuerza de parte de Dios.',
-    image: '/src/otoniel_font.jpg'
+    image: otonielImg
   },
   {
     name: 'Chris Méndez',
     country: 'Argentina',
     role: 'Pastor Hillsong América Latina',
     quote: 'Me sentí totalmente desafiado porque uno puede tener fe para creer todo lo que Dios tiene para nosotros, pero la fe tiene que caminar junto a la sabiduría para administrar y cuidar lo que Él nos da.',
-    image: '/src/chris_mendez.jpg'
+    image: chrisImg
   },
   {
     name: 'Pepe Caceros',
     country: 'Guatemala',
     role: 'Partner Lenovo, HPE & Apple',
     quote: 'Lo más importante es que la información viene de la fuente correcta: no solo de una persona que es testimonio vivo de lo que ha aprendido y de lo que enseña, sino además de la fuente más importante: la sabiduría de Dios.',
-    image: '/src/pepe_caceros.jpg'
+    image: pepeImg
   }
 ];
 
